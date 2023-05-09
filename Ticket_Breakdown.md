@@ -22,8 +22,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ### create a facility agent provision in the database:
 
 Implementation Details:
-- we need to create a table called FacitityAgents in the database with the facilityAgentID, agentID and facilityID
-- the table should support a scenarion where an agent can belong to more than one facility
+- we need to create a table called FacitityAgents in the database with the facilityAgentID, agentID and facilityID where facilityAgentID is the custom id for an agent
+- the table should support a scenario where an agent can belong to more than one facility
 - the table should have only INT as its data types i.e facilityAgentID, agentID and facilityID are all INTs
 - the agentID is to be used as it FOREIGN_KEY
 
@@ -38,7 +38,7 @@ Then an column containing the facilityAgentID, agentID and facilityIDf is create
 Time | Effort:
 - approximately 30min
 
-### create an agent for specific facility:
+### create an agent for a specific facility:
 
 Implementation Details:
 - we need to create a function `createFacilityAgent` that takes in an agentID from the Agents table in the database
