@@ -9,3 +9,7 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+- I changed the way the crypto package was being imported to match the latest ECMAScript 6 importing module criteria by using the import statement. For the import modele to work well without throwing a warning or error in the execution, i had to add the module type in the package.json
+
+- I also changed the way the `deterministicPartitionKey` module was being imported by using the ECMAScript 6 importing module criteria
