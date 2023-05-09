@@ -1,4 +1,5 @@
-import deterministicPartitionKey from "./dpk";
+// changed import to es6 syntax
+import { deterministicPartitionKey } from "./dpk.js";
 
 describe("deterministicPartitionKey", () => {
   it("Returns the literal '0' when given no input", () => {
@@ -6,8 +7,8 @@ describe("deterministicPartitionKey", () => {
     expect(trivialKey).toBe("0");
   });
 
-  it("Returns a json object if the candidate is not a string", () => {
-    const trivialKey = deterministicPartitionKey();
-    expect(trivialKey).toBe("0");
-  });
+  // it("Returns the literal '0' when given no input", () => {
+  //   const trivialKey = deterministicPartitionKey();
+  //   expect(trivialKey).toBe("0");
+  // });
 });
