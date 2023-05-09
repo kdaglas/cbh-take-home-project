@@ -18,11 +18,29 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ## Your Breakdown Here
 
 ### ----------------------------------------------
-### create an agent provision for each facility:
+
+### create a facility agent provision in the database:
 
 Implementation Details:
 - we need to create a table called FacitityAgents in the database with the facilityAgentID, agentID and facilityID
 - the table should support a scenarion where an agent can belong to more than one facility
+- the table should have only INT as its data types i.e facilityAgentID, agentID and facilityID are all INTs
+- the agentID is to be used as it FOREIGN_KEY
+
+Acceptance Criteria:
+```
+Scenario: 
+Given an agentID from the database is provided,
+When creating the agents record for the facility,
+Then an column containing the facilityAgentID, agentID and facilityIDf is created.
+```
+
+Time | Effort:
+- approximately 30min
+
+### create an agent for specific facility:
+
+Implementation Details:
 - we need to create a function `createFacilityAgent` that takes in an agentID from the Agents table in the database
 - the agent should exist in the Agents table hence a valid agentID is required for that function
 - the function should be able to save the created agent in the FacitityAgents table
@@ -37,7 +55,7 @@ Then an agent account attached to that facility is created.
 ```
 
 Time | Effort:
-- approximately 1hr
+- approximately 1.5hr
 
 
 ### retrieve the shifts worked by an agent:
