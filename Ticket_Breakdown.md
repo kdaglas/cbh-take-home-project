@@ -16,3 +16,18 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+### ----------------------------------------------
+### create an agent provision for each facility:
+
+- we need to create a data table in the database called FacitityAgents
+- we need to create a function `createFacilityAgent` that takes in an agentID from the Agents database table and saves or posts it in the FacitityAgents
+
+- Acceptance Criteria:
+```
+Scenario: 
+Given an agentID is provided to the function,
+When creating the agents record in the database
+Then an agent account attached to that facility is created
+```
+- the agent should exist in the Agents table hence a valid agentID is required for that function
