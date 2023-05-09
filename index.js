@@ -1,4 +1,4 @@
-// changed import to es6 syntax
+// changed import to ES6 syntax
 import { deterministicPartitionKey } from "./dpk.js";
 
-console.log(deterministicPartitionKey());
+console.log(deterministicPartitionKey("metoo"));

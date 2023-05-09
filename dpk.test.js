@@ -5,4 +5,9 @@ describe("deterministicPartitionKey", () => {
     const trivialKey = deterministicPartitionKey();
     expect(trivialKey).toBe("0");
   });
+
+  it("Returns a json object if the candidate is not a string", () => {
+    const trivialKey = deterministicPartitionKey();
+    expect(trivialKey).toBe("0");
+  });
 });

@@ -14,5 +14,4 @@ I changed the way the crypto package was being imported to match the latest ECMA
 
 I also changed the way the `deterministicPartitionKey` module was being exported to match the way functions are exported using the lastest Javascript ES6 syntax.
 
-I reduced the number of if statements by creating a separate helper function that checks if the event is given and either returns the partitionKey if it exists or the encrypted data if not.
-I utilised the use of the logical AND (`&&`) operator to reduce the number of if statements
+I reduced the number of if statements by creating a separate helper function that checks if the event is given and either returns the partitionKey if it exists or the encrypted data if not. I utilised the use of the ternary operator because of its unique ability to handle conditional logic by taking in three operands. I made this choice because I believe that this helps to make code more straight forward and shorten it while also making it easy to read.

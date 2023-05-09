@@ -16,7 +16,7 @@ const checkEvent = (event) => {
       return crypto.createHash("sha3-512").update(data).digest("hex");
     }
   }
-  
+
 }
 
 // change the export
@@ -32,8 +32,8 @@ export const deterministicPartitionKey = (event) => {
   */
   candidate = checkEvent(event)
 
-  if (candidate && typeof candidate !== "string") {
-    candidate = JSON.stringify(candidate);
+  if (candidate) {
+    candidate = ((typeof candidate !== "string") ? JSON.stringify(candidate) : candidate)
   } else {
     candidate = TRIVIAL_PARTITION_KEY;
   }
