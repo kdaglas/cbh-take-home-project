@@ -20,14 +20,18 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ### ----------------------------------------------
 ### create an agent provision for each facility:
 
-- we need to create a data table in the database called FacitityAgents
-- we need to create a function `createFacilityAgent` that takes in an agentID from the Agents database table and saves or posts it in the FacitityAgents
+Implementation Details:
+- we need to create a table called FacitityAgents in the database with the facilityAgentID and agentID
+- we need to create a function `createFacilityAgent` that takes in an agentID from the Agents table in the database
+- the agent should exist in the Agents table hence a valid agentID is required for that function
+- the function should be able to save the created agent in the FacitityAgents table
 
-- Acceptance Criteria:
+Acceptance Criteria:
 ```
 Scenario: 
 Given an agentID is provided to the function,
 When creating the agents record in the database
 Then an agent account attached to that facility is created
 ```
-- the agent should exist in the Agents table hence a valid agentID is required for that function
+Time | Effort:
+- approximately 1hr
